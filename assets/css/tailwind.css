@@ -120,7 +120,7 @@
   }
 
   .default-link {
-    @apply text-yellow-400 underline relative hover:-translate-y-1 duration-300 ease-in-out;
+    @apply text-yellow-400 underline relative hover:-translate-y-1 duration-300 ease-in-out default-cursor;
   }
 
   .default-cursor {
