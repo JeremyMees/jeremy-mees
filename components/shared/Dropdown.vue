@@ -1,5 +1,5 @@
 <script setup>
-import ChevronDown from '@/assets/icons/chevron-down.svg'
+import ChevronDown from '~/assets/icons/chevron-down.svg'
 
 const emit = defineEmits(['update:modelValue'])
 const props = defineProps({

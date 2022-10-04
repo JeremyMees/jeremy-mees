@@ -25,10 +25,10 @@ onMounted(() => {
             <DefaultButton />
           </NuxtLink>
         </div>
-        <img id="float2" src="@/assets/images/ok.png" class="w-[300px] h-[300px] -rotate-[60deg] relative mx-auto" />
+        <img id="float2" src="~/assets/images/ok.png" class="w-[300px] h-[300px] -rotate-[60deg] relative mx-auto" />
       </div>
       <div class="flex flex-wrap-reverse justify-center xl:justify-between gap-4 items-center">
-        <img id="float1" src="@/assets/images/thumb.png" class="w-[350px] h-[350px] relative scale-x-[-1]" />
+        <img id="float1" src="~/assets/images/thumb.png" class="w-[350px] h-[350px] relative scale-x-[-1]" />
         <DefaultContactCard
           :name="content.name"
           :job="content.job"
