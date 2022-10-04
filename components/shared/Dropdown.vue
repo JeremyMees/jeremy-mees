@@ -17,7 +17,7 @@ function selectedOption(value) {
 </script>
 
 <template>
-  <div v-click-outside="() => (isOpen = false)" class="def:font-title def:border-2 def:border-black relative">
+  <div v-click-outside="() => (isOpen = false)" class="def:font-title def:border-2 def:border-black relative z-10">
     <div class="flex flex-row items-center p-2 mx-auto gap-x-4 group" @click="isOpen = !isOpen">
       <div>Wijzig thema</div>
       <ChevronDown class="relative duration-200 top-1 h-4 w-4 stroke-2" :class="{ 'rotate-180': isOpen }" />
