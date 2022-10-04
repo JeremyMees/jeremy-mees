@@ -19,7 +19,10 @@ defineProps({
   <div
     class="default-shadow relative hover:scale-[1.05] border-lg duration-300 ease-in-out p-4 max-w-md w-full text-center bg-white"
   >
-    <img src="/images/jeremy.png" class="w-20 h-20 mx-auto" />
+    <img
+      src="https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883652/Jeremy_hchzr8.png"
+      class="w-20 h-20 mx-auto"
+    />
     <p class="title-small">{{ name }}</p>
     <p class="body-small">{{ job }}</p>
     <div class="body-extra-small gap-1 flex flex-col py-2">

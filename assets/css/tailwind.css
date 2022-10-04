@@ -124,7 +124,7 @@
   }
 
   .default-cursor {
-    cursor: url('/images/default-cursor.png'), auto;
+    cursor: url('https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883650/default-cursor_yhcdfq.png'), auto;
   }
 
   .flip-horizontal {
