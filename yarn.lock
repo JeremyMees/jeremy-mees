@@ -296,6 +296,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.10.tgz#78a42897c2cf8db9fd5f1811f7590393b77774c7"
   integrity sha512-w0Ou3Z83LOYEkwaui2M8VwIp+nLi/NA60lBLMvaJ+vXVMcsARYdEzLNE7RSm4+lSg4zq4d7fAVuzk7PNQ5JFgg==
 
+"@formkit/auto-animate@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@formkit/auto-animate/-/auto-animate-1.0.0-beta.3.tgz#d5eb724ccb44afba9348df32ce0b8bb10037a7ee"
+  integrity sha512-glsi+ytwQpxT/Ctr9GtcIfVr4dO6mJ04mQbNU8MFSdCdqMopHtyfU5Fib0+9lNFIeR0luY4/0NW95/2R5pKsag==
+
 "@ioredis/commands@^1.1.1":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ioredis/commands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"
@@ -1291,6 +1296,11 @@ cli-width@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-4.0.0.tgz#a5622f6a3b0a9e3e711a25f099bf2399f608caf6"
   integrity sha512-ZksGS2xpa/bYkNzN3BAw1wEjsLV/ZKOf/CCrJ/QOBsxx6fOARIkwTutxp1XIOIohi6HKmOFjMoK/XaqDVUpEEw==
+
+click-outside-vue3@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/click-outside-vue3/-/click-outside-vue3-4.0.1.tgz#81a6ac01696b301764b42db6fdbdf28e7cd8ef95"
+  integrity sha512-sbplNecrup5oGqA3o4bo8XmvHRT6q9fvw21Z67aDbTqB9M6LF7CuYLTlLvNtOgKU6W3zst5H5zJuEh4auqA34g==
 
 clipboardy@^3.0.0:
   version "3.0.0"
@@ -2318,6 +2328,11 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, 
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+
+gsap@^3.11.2:
+  version "3.11.2"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.11.2.tgz#e2d6e7b0f2bcdf16a0690ad1ca44d764775b4bec"
+  integrity sha512-y1NSjM2i2yCjLtoNuoyIhhh9kmYOpFEU9su1EbHuZGN3OWr8M6NIjNHBurSWu/blbHAPQqGm7mUIokSxqTTp2Q==
 
 gzip-size@^7.0.0:
   version "7.0.0"

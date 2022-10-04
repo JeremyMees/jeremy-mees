@@ -12,7 +12,10 @@
     "nuxt": "3.0.0-rc.11"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^1.0.0-beta.3",
     "@pinia/nuxt": "^0.4.2",
+    "click-outside-vue3": "^4.0.1",
+    "gsap": "^3.11.2",
     "vite-svg-loader": "^3.6.0"
   }
 }

@@ -1,6 +1,7 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['./pages/*.{vue,js}', './layouts/*.{vue,js}', './components/**/*.{vue,js}', './plugins/*.{js,ts}'],
-  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
@@ -9,5 +10,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant('def', '.theme-default &')
+    }),
+  ],
 }
