@@ -19,10 +19,16 @@ defineProps({
   <div
     class="default-shadow relative hover:scale-[1.05] border-lg duration-300 ease-in-out p-4 max-w-md w-full text-center bg-white"
   >
-    <img
-      src="https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883652/Jeremy_hchzr8.png"
+    <nuxt-img
+      src="/Jeremy_37gNW-I-He.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664890846501"
       alt="illustration of my face"
-      class="w-20 h-20 mx-auto"
+      loading="lazy"
+      width="80"
+      height="80"
+      quality="90"
+      format="webp"
+      provider="imagekit"
+      class="mx-auto"
     />
     <p class="title-small">{{ name }}</p>
     <p class="body-small">{{ job }}</p>

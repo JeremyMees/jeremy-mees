@@ -3,7 +3,7 @@ import { useContentStore } from '~/stores/content'
 
 useHead({
   title: 'DEV | jeremy',
-  meta: [{ name: 'jeremy-mees.dev', content: 'Frontend developer in hart en nieren' }],
+  meta: [{ name: 'description', hid: 'description', content: 'Frontend developer in hart en nieren' }],
   htmlAttrs: { lang: 'nl' },
 })
 

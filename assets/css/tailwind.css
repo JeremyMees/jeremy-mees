@@ -124,7 +124,8 @@
   }
 
   .default-cursor {
-    cursor: url('https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883650/default-cursor_yhcdfq.png'), auto;
+    cursor: url('https://ik.imagekit.io/c2es1qasw/default-cursor_Vr9RzyAJO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664890845604'),
+      auto;
   }
 
   .flip-horizontal {

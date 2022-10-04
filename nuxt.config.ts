@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     dirs: ['~/components/default', '~/components/shared', '~/components/templates'],
   },
   css: ['~/assets/css/global.css'],
-  modules: ['@pinia/nuxt'],
+  modules: ['@nuxt/image-edge', '@pinia/nuxt'],
   buildModules: ['@nuxtjs/tailwindcss'],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -16,5 +16,10 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [svgLoader()],
+  },
+  image: {
+    imagekit: {
+      baseURL: 'https://ik.imagekit.io/c2es1qasw',
+    },
   },
 })

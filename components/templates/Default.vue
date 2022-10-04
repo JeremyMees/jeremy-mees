@@ -25,19 +25,31 @@ onMounted(() => {
             <DefaultButton />
           </NuxtLink>
         </div>
-        <img
+        <nuxt-img
           id="float2"
           alt="ok hand"
-          src="https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883651/ok_utcmqa.png"
-          class="w-[300px] h-[300px] -rotate-[60deg] relative mx-auto"
+          src="/ok_tIw6OC6Wb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664890846626"
+          preload
+          width="300"
+          height="300"
+          quality="90"
+          format="webp"
+          provider="imagekit"
+          class="-rotate-[60deg] max-w-[300px] max-h-[300px] relative mx-auto aspect-square"
         />
       </div>
       <div class="flex flex-wrap-reverse justify-center xl:justify-between gap-4 items-center">
-        <img
+        <nuxt-img
           id="float1"
           alt="thumbs up hand"
-          src="https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883651/thumb_auqep0.png"
-          class="w-[350px] h-[350px] relative scale-x-[-1]"
+          src="/thumb_d-bxD6Wg5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664890846671"
+          loading="lazy"
+          width="350"
+          height="350"
+          quality="90"
+          format="webp"
+          provider="imagekit"
+          class="relative scale-x-[-1] aspect-square"
         />
         <DefaultContactCard
           :name="content.name"
