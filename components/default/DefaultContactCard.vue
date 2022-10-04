@@ -21,6 +21,7 @@ defineProps({
   >
     <img
       src="https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883652/Jeremy_hchzr8.png"
+      alt="illustration of my face"
       class="w-20 h-20 mx-auto"
     />
     <p class="title-small">{{ name }}</p>
@@ -42,6 +43,7 @@ defineProps({
       <NuxtLink
         rel="noreferrer noopener"
         target="_blank"
+        aria-label="Whatsapp"
         :to="`https://wa.me/${number}`"
         class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
       >
@@ -50,6 +52,7 @@ defineProps({
       <NuxtLink
         rel="noreferrer noopener"
         target="_blank"
+        aria-label="Linkedin"
         :to="linkedinLink"
         class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
       >
@@ -58,6 +61,7 @@ defineProps({
       <NuxtLink
         rel="noreferrer noopener"
         :to="`mailto:${email}`"
+        aria-label="Email"
         class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
       >
         <Email class="w-4 h-4" />
@@ -65,6 +69,7 @@ defineProps({
       <NuxtLink
         rel="noreferrer noopener"
         :to="`tel:${number}`"
+        aria-label="Nummer"
         class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
       >
         <Phone class="w-4 h-4" />

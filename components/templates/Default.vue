@@ -27,6 +27,7 @@ onMounted(() => {
         </div>
         <img
           id="float2"
+          alt="ok hand"
           src="https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883651/ok_utcmqa.png"
           class="w-[300px] h-[300px] -rotate-[60deg] relative mx-auto"
         />
@@ -34,6 +35,7 @@ onMounted(() => {
       <div class="flex flex-wrap-reverse justify-center xl:justify-between gap-4 items-center">
         <img
           id="float1"
+          alt="thumbs up hand"
           src="https://res.cloudinary.com/dlyd47zhw/image/upload/v1664883651/thumb_auqep0.png"
           class="w-[350px] h-[350px] relative scale-x-[-1]"
         />
