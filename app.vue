@@ -19,7 +19,7 @@ const theme = ref('Default')
           <div class="title-small">Jeremy Mees</div>
           <Dropdown v-model="theme" :options="content.themes" class="" />
         </div>
-        <Default />
+        <Default class="pt-4" />
         <DefaultFooter />
       </section>
       <section v-else-if="theme === 'Test'">other theme</section>
