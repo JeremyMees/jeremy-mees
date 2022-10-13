@@ -11,15 +11,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen overflow-y-auto no-scrollbar">
-    <div class="flex flex-col gap-10 min-h-full">
+  <div class="min-h-screen overflow-y-auto no-scrollbar p-4">
+    <DefaultHeader />
+    <div class="flex flex-col gap-10 min-h-full py-8">
       <div class="flex flex-wrap justify-between gap-1">
         <div class="flex flex-col gap-1 max-w-xl">
-          <p class="title-large gradient-text">De ideale boost</p>
-          <p class="title-large">Die jouw bedrijf verdiend</p>
+          <p class="title-large gradient-text">{{ content.title1 }}</p>
+          <p class="title-large">{{ content.title2 }}</p>
           <p class="pt-4 body-normal">
-            Als Creatieve Developer combineer ik strakke designs met goed geschreven code om sterke producten te
-            ontwikkelen. Daardoor kunnen mijn klanten altijd goede resultaten verwachten van een samenwerking met mij.
+            {{ content.description }}
           </p>
           <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max default-cursor">
             <DefaultButton />
@@ -79,5 +79,6 @@ onMounted(() => {
         </NuxtLink>
       </div>
     </div>
+    <DefaultFooter />
   </div>
 </template>

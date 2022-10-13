@@ -3,7 +3,10 @@ import { defineStore } from 'pinia'
 export const useContentStore = defineStore('content', {
   state: () => {
     return {
-      themes: ['Default', 'Test'],
+      title1: 'De ideale boost',
+      title2: 'Die jouw bedrijf verdiend',
+      description:
+        ' Als Creatieve Developer combineer ik strakke designs met goed geschreven code om sterke producten te ontwikkelen. Daardoor kunnen mijn klanten altijd goede resultaten verwachten van een samenwerking met mij.',
       name: 'Jeremy Mees',
       job: 'Frontend developer',
       email: 'jeremymees123@gmail.com',

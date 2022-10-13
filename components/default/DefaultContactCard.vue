@@ -40,7 +40,7 @@ defineProps({
           :to="appeelLink"
           target="_blank"
           rel="noreferrer noopener"
-          class="default-link curdefault-cursorsor"
+          class="default-link default-cursor"
           >Appeel.io</NuxtLink
         >
       </div>

@@ -1,28 +1,20 @@
 <script setup>
-import { useContentStore } from '~/stores/content'
-
 useHead({
   title: 'DEV | jeremy',
   meta: [{ name: 'description', hid: 'description', content: 'Frontend developer in hart en nieren' }],
   htmlAttrs: { lang: 'nl' },
 })
 
-const content = useContentStore()
-const theme = ref('Default')
+const theme = useTheme()
+
+// onMounted(() => theme.setRandom())
 </script>
 
 <template>
-  <main class="p-4" :class="{ 'theme-default': theme === 'Default' }">
+  <main class="p-4" :class="{ 'theme-default': theme.active.value === 'Default' }">
     <div class="max-w-[1800px] mx-auto def:default-cursor">
-      <section v-if="theme === 'Default'" class="flex flex-col gap-4 mb-4">
-        <div class="flex flex-wrap gap-2 justify-between items-center default-shadow px-4 py-2">
-          <div class="title-small">Jeremy Mees</div>
-          <Dropdown v-model="theme" :options="content.themes" class="" />
-        </div>
-        <Default class="pt-4" />
-        <DefaultFooter />
-      </section>
-      <section v-else-if="theme === 'Test'">other theme</section>
+      <Default v-if="theme.active.value === 'Default'" class="theme-default" />
+      <Retro v-else-if="theme.active.value === 'Retro'" class="theme-retro font-retro-text" />
     </div>
   </main>
 </template>

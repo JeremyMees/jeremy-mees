@@ -7,12 +7,15 @@ module.exports = {
       fontFamily: {
         title: ['Abril Fatface', 'sans-serif'],
         text: ['Lato', 'sans-serif'],
+        'retro-title': ['ChicagoFLF', 'sans-serif'],
+        'retro-text': ['FindersKeepers', 'sans-serif'],
       },
     },
   },
   plugins: [
     plugin(({ addVariant }) => {
       addVariant('def', '.theme-default &')
+      addVariant('retro', '.theme-retro &')
     }),
   ],
 }

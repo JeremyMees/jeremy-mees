@@ -1,17 +1,13 @@
 <script setup>
 import ChevronDown from '~/assets/icons/chevron-down.svg'
 
-const emit = defineEmits(['update:modelValue'])
-const props = defineProps({
-  options: { type: Array, required: true },
-  modelValue: { type: String, required: true },
-})
+const theme = useTheme()
 
 const isOpen = ref(false)
 
 function selectedOption(value) {
-  if (props.modelValue === value) return
-  emit('update:modelValue', value)
+  if (theme.active.value === value) return
+  theme.setActiveTheme(value)
   isOpen.value = false
 }
 </script>
@@ -24,11 +20,11 @@ function selectedOption(value) {
     </div>
     <div class="bg-white flex flex-col absolute w-full def:border-2 def:border-black" :class="{ hidden: !isOpen }">
       <div
-        v-for="option in options"
+        v-for="option in theme.options.value"
         :key="option"
         class="def:hover:!bg-yellow-400/20 p-2"
         :class="{
-          'def:bg-yellow-400/40': option === modelValue,
+          'def:bg-yellow-400/40': option === theme.active,
         }"
         @click="selectedOption(option)"
       >

@@ -1,1 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap');
+
+@font-face {
+  font-family: 'ChicagoFLF';
+  font-weight: 500;
+  src: url('~/assets/fonts/ChicagoFLF.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FindersKeepers';
+  font-weight: 500;
+  src: url('~/assets/fonts/FindersKeepers.woff2') format('woff2');
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
