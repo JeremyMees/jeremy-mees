@@ -7,7 +7,7 @@ useHead({
 
 const theme = useTheme()
 
-// onMounted(() => theme.setRandom())
+onMounted(() => theme.setRandom())
 </script>
 
 <template>

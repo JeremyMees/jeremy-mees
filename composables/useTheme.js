@@ -1,4 +1,4 @@
-const active = ref('Retro')
+const active = ref('Default')
 const options = ref(['Default', 'Retro'])
 
 export default function useLayout() {
