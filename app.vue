@@ -18,12 +18,7 @@ const theme = useTheme()
       'theme-blobs bg-[#0A2463] text-white': theme.active.value === 'Blobs',
     }"
   >
-    <div class="blob:block hidden">
-      <div class="blob-one" />
-      <div class="blob-two" />
-      <div class="blob-three" />
-      <div class="blob-four" />
-    </div>
+    <BlobsShapes class="blob:block hidden" />
     <div class="max-w-[1800px] mx-auto def:default-cursor">
       <component :is="theme.active.value" />
     </div>
