@@ -10,6 +10,7 @@ module.exports = {
         'retro-title': ['ChicagoFLF', 'sans-serif'],
         'retro-text': ['FindersKeepers', 'sans-serif'],
         'blobs-title': ['Playfair Display', 'serif'],
+        'absurd-title': ['Poppins', 'sans-serif'],
       },
       colors: {
         blobs: '#ED1250',
@@ -21,6 +22,7 @@ module.exports = {
       addVariant('sun', '.theme-sunny &')
       addVariant('retro', '.theme-retro &')
       addVariant('blob', '.theme-blobs &')
+      addVariant('abs', '.theme-absurd &')
     }),
   ],
 }

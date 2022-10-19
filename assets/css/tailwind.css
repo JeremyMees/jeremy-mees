@@ -11,8 +11,28 @@
 }
 
 @layer utilities {
+  .title-huge {
+    @apply font-title retro:font-retro-title blob:font-blobs-title abs:font-absurd-title;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 6rem;
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      line-height: 11rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 5rem;
+      line-height: 11rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 7.5rem;
+      line-height: 14rem;
+    }
+    /* text-[2rem] sm:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] 2xl:text-[8rem] */
+  }
+
   .title-large {
-    @apply font-title retro:font-retro-title blob:font-blobs-title;
+    @apply font-title retro:font-retro-title blob:font-blobs-title abs:font-absurd-title;
     font-size: 2rem;
     font-weight: 800;
     line-height: 2.25rem;
@@ -31,7 +51,7 @@
   }
 
   .title {
-    @apply font-title retro:font-retro-title blob:font-blobs-title;
+    @apply font-title retro:font-retro-title blob:font-blobs-title abs:font-absurd-title;
     font-size: 1.5rem;
     font-weight: 800;
     line-height: 1.75rem;
@@ -50,7 +70,7 @@
   }
 
   .title-small {
-    @apply font-title retro:font-retro-title blob:font-blobs-title;
+    @apply font-title retro:font-retro-title blob:font-blobs-title abs:font-absurd-title;
     font-size: 1rem;
     font-weight: 800;
     line-height: 1.25rem;
@@ -64,7 +84,7 @@
     }
     @media (min-width: 1440px) {
       font-size: 1.25rem;
-      line-height: 1.5rem;
+      line-height: 1.75rem;
     }
   }
 

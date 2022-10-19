@@ -16,6 +16,7 @@ const theme = useTheme()
       'theme-sunny p-4': theme.active.value === 'Sunny',
       'theme-retro font-retro-text p-4': theme.active.value === 'Retro',
       'theme-blobs bg-[#0A2463] text-white': theme.active.value === 'Blobs',
+      'theme-absurd bg-[#d5d0c4] text-black': theme.active.value === 'Absurd',
     }"
   >
     <BlobsShapes class="blob:block hidden" />
