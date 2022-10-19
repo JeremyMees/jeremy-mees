@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     plugin(({ addVariant }) => {
-      addVariant('def', '.theme-default &')
+      addVariant('sun', '.theme-sunny &')
       addVariant('retro', '.theme-retro &')
       addVariant('blob', '.theme-blobs &')
     }),

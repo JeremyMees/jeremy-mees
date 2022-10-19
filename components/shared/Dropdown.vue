@@ -15,22 +15,22 @@ function selectedOption(value) {
 <template>
   <div
     v-click-outside="() => (isOpen = false)"
-    class="def:font-title def:border-2 def:border-black relative z-10 blob:cursor-pointer"
+    class="sun:font-title sun:border-2 sun:border-black relative z-10 blob:cursor-pointer"
   >
     <div class="flex flex-row items-center p-2 mx-auto gap-x-4 group" @click="isOpen = !isOpen">
       <div>Wijzig thema</div>
       <ChevronDown class="relative duration-200 top-1 h-4 w-4 stroke-2" :class="{ 'rotate-180': isOpen }" />
     </div>
     <div
-      class="def:bg-white flex flex-col absolute w-full def:border-2 def:border-black blob:glass"
+      class="sun:bg-white flex flex-col absolute w-full sun:border-2 sun:border-black blob:glass"
       :class="{ hidden: !isOpen }"
     >
       <div
         v-for="option in theme.options.value"
         :key="option"
-        class="def:hover:!bg-yellow-400/20 p-2"
+        class="sun:hover:!bg-yellow-400/20 p-2"
         :class="{
-          'def:bg-yellow-400/40 blob:text-blobs': option === theme.active.value,
+          'sun:bg-yellow-400/40 blob:text-blobs': option === theme.active.value,
         }"
         @click="selectedOption(option)"
       >

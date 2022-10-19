@@ -14,7 +14,7 @@ const content = useContentStore()
         <p class="py-4 leading-4">
           {{ content.description }}
         </p>
-        <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max default-cursor">
+        <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max">
           <RetroButton> {{ content.cta }} </RetroButton>
         </NuxtLink>
       </div>
@@ -58,7 +58,7 @@ const content = useContentStore()
     <div class="max-w-xl flex flex-col gap-4">
       <p class="title">{{ content.ctaTitle }}</p>
       <p class="body-normal max-w-xl">{{ content.ctaText }}</p>
-      <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max default-cursor">
+      <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max">
         <RetroButton>{{ content.cta }}</RetroButton>
       </NuxtLink>
     </div>

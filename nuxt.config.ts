@@ -3,7 +3,7 @@ import svgLoader from 'vite-svg-loader'
 export default defineNuxtConfig({
   components: {
     global: true,
-    dirs: ['~/components/default', '~/components/retro','~/components/blobs', '~/components/shared', '~/components/templates'],
+    dirs: ['~/components/sunny', '~/components/retro','~/components/blobs', '~/components/shared', '~/components/templates'],
   },
   css: ['~/assets/css/global.css'],
   modules: ['@nuxt/image-edge', '@pinia/nuxt'],

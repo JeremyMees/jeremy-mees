@@ -17,7 +17,7 @@ defineProps({
 
 <template>
   <div
-    class="default-shadow relative hover:scale-[1.05] border-lg duration-300 ease-in-out p-4 max-w-md w-full text-center bg-white"
+    class="sunny-shadow relative hover:scale-[1.05] border-lg duration-300 ease-in-out p-4 max-w-md w-full text-center bg-white"
   >
     <nuxt-img
       src="/Jeremy_37gNW-I-He.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664890846501"
@@ -40,7 +40,7 @@ defineProps({
           :to="appeelLink"
           target="_blank"
           rel="noreferrer noopener"
-          class="default-link default-cursor"
+          class="sunny-link sunny-cursor"
           >Appeel.io</NuxtLink
         >
       </div>
@@ -51,7 +51,7 @@ defineProps({
         target="_blank"
         aria-label="Whatsapp"
         :to="`https://wa.me/${number}`"
-        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
+        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out sunny-cursor"
       >
         <Whatsapp class="w-4 h-4" />
       </NuxtLink>
@@ -60,7 +60,7 @@ defineProps({
         target="_blank"
         aria-label="Linkedin"
         :to="linkedinLink"
-        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
+        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out sunny-cursor"
       >
         <Linkedin class="w-4 h-4" />
       </NuxtLink>
@@ -68,7 +68,7 @@ defineProps({
         rel="noreferrer noopener"
         :to="`mailto:${email}`"
         aria-label="Email"
-        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
+        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out sunny-cursor"
       >
         <Email class="w-4 h-4" />
       </NuxtLink>
@@ -76,7 +76,7 @@ defineProps({
         rel="noreferrer noopener"
         :to="`tel:${number}`"
         aria-label="Nummer"
-        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out default-cursor"
+        class="bg-yellow-400/40 p-1 rounded relative hover:-translate-y-1 duration-300 ease-in-out sunny-cursor"
       >
         <Phone class="w-4 h-4" />
       </NuxtLink>

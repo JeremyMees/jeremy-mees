@@ -12,7 +12,7 @@ onMounted(() => {
 
 <template>
   <div class="min-h-screen overflow-y-auto no-scrollbar p-4">
-    <DefaultHeader />
+    <SunnyHeader />
     <div class="flex flex-col gap-10 min-h-full py-8">
       <div class="flex flex-wrap justify-between gap-1">
         <div class="flex flex-col gap-1 max-w-xl">
@@ -21,8 +21,8 @@ onMounted(() => {
           <p class="pt-4 body-normal">
             {{ content.description }}
           </p>
-          <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max default-cursor">
-            <DefaultButton> {{ content.cta }} </DefaultButton>
+          <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max sunny-cursor">
+            <SunnyButton> {{ content.cta }} </SunnyButton>
           </NuxtLink>
         </div>
         <nuxt-img
@@ -51,7 +51,7 @@ onMounted(() => {
           provider="imagekit"
           class="relative scale-x-[-1] aspect-square"
         />
-        <DefaultContactCard
+        <SunnyContactCard
           :name="content.name"
           :job="content.job"
           :email="content.email"
@@ -63,7 +63,7 @@ onMounted(() => {
         />
       </div>
       <div class="flex flex-wrap justify-center pt-20">
-        <DefaultListItem
+        <SunnyListItem
           v-for="(listItem, index) in content.list"
           :key="listItem.title"
           :title="listItem.title"
@@ -74,11 +74,11 @@ onMounted(() => {
       <div class="max-w-xl flex flex-col gap-4 pt-10">
         <p class="title">{{ content.ctaTitle }}</p>
         <p class="body-normal max-w-xl">{{ content.ctaText }}</p>
-        <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max default-cursor">
-          <DefaultButton> {{ content.cta }} </DefaultButton>
+        <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max sunny-cursor">
+          <SunnyButton> {{ content.cta }} </SunnyButton>
         </NuxtLink>
       </div>
     </div>
-    <DefaultFooter />
+    <SunnyFooter />
   </div>
 </template>

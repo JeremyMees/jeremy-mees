@@ -1,5 +1,5 @@
 <template>
-  <button class="button default-cursor">
+  <button class="button sunny-cursor">
     <slot />
   </button>
 </template>

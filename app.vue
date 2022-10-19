@@ -13,13 +13,13 @@ const theme = useTheme()
 <template>
   <main
     :class="{
-      'theme-default p-4': theme.active.value === 'Default',
+      'theme-sunny p-4': theme.active.value === 'Sunny',
       'theme-retro font-retro-text p-4': theme.active.value === 'Retro',
       'theme-blobs bg-[#0A2463] text-white': theme.active.value === 'Blobs',
     }"
   >
     <BlobsShapes class="blob:block hidden" />
-    <div class="max-w-[1800px] mx-auto def:default-cursor">
+    <div class="max-w-[1800px] mx-auto sun:sunny-cursor">
       <component :is="theme.active.value" />
     </div>
   </main>
