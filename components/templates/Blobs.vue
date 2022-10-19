@@ -49,50 +49,52 @@ function mouseMove(e) {
       <p>{{ content.title1 }}</p>
       <p>{{ content.title2 }}</p>
     </div>
-    <div class="p-10 body-normal max-w-xl glass flex flex-col gap-4">
-      <p>{{ content.description }}</p>
-      <NuxtLink
-        rel="noreferrer noopener"
-        :to="`mailto:${content.email}`"
-        class="max-w-max"
+    <div class="flex flex-col gap-10 sm:px-10">
+      <div class="p-10 body-normal max-w-xl glass flex flex-col gap-4">
+        <p>{{ content.description }}</p>
+        <NuxtLink
+          rel="noreferrer noopener"
+          :to="`mailto:${content.email}`"
+          class="max-w-max"
+          @mouseenter="gsap.to('.ball', { scale: 1.75, duration: 0.25 })"
+          @mouseleave="gsap.to('.ball', { scale: 1 })"
+        >
+          <BlobsButton class="self-end">{{ content.cta }} </BlobsButton>
+        </NuxtLink>
+      </div>
+      <BlobsContactCard
+        :name="content.name"
+        :job="content.job"
+        :email="content.email"
+        :number="content.number"
+        :linkedinLink="content.linkedinLink"
+        :aboutMe="content.aboutMe"
+        :appeelLink="content.appeelLink"
+        class="self-end"
         @mouseenter="gsap.to('.ball', { scale: 1.75, duration: 0.25 })"
         @mouseleave="gsap.to('.ball', { scale: 1 })"
-      >
-        <BlobsButton class="self-end">{{ content.cta }} </BlobsButton>
-      </NuxtLink>
-    </div>
-    <BlobsContactCard
-      :name="content.name"
-      :job="content.job"
-      :email="content.email"
-      :number="content.number"
-      :linkedinLink="content.linkedinLink"
-      :aboutMe="content.aboutMe"
-      :appeelLink="content.appeelLink"
-      class="self-end"
-      @mouseenter="gsap.to('.ball', { scale: 1.75, duration: 0.25 })"
-      @mouseleave="gsap.to('.ball', { scale: 1 })"
-    />
-    <div class="flex flex-col gap-4">
-      <BlobsListItem
-        v-for="(listItem, index) in content.list"
-        :key="listItem.title"
-        :title="listItem.title"
-        :text="listItem.text"
-        :number="index + 1"
       />
-    </div>
-    <div class="max-w-xl glass flex flex-col gap-4 p-10 self-end">
-      <p class="title">{{ content.ctaTitle }}</p>
-      <p class="body-normal max-w-xl">{{ content.ctaText }}</p>
-      <NuxtLink
-        rel="noreferrer noopener"
-        :to="`mailto:${content.email}`"
-        @mouseenter="gsap.to('.ball', { scale: 1.75, duration: 0.25 })"
-        @mouseleave="gsap.to('.ball', { scale: 1 })"
-      >
-        <BlobsButton> {{ content.cta }} </BlobsButton>
-      </NuxtLink>
+      <div class="flex flex-col gap-4">
+        <BlobsListItem
+          v-for="(listItem, index) in content.list"
+          :key="listItem.title"
+          :title="listItem.title"
+          :text="listItem.text"
+          :number="index + 1"
+        />
+      </div>
+      <div class="max-w-xl glass flex flex-col gap-4 p-10 self-end">
+        <p class="title">{{ content.ctaTitle }}</p>
+        <p class="body-normal max-w-xl">{{ content.ctaText }}</p>
+        <NuxtLink
+          rel="noreferrer noopener"
+          :to="`mailto:${content.email}`"
+          @mouseenter="gsap.to('.ball', { scale: 1.75, duration: 0.25 })"
+          @mouseleave="gsap.to('.ball', { scale: 1 })"
+        >
+          <BlobsButton> {{ content.cta }} </BlobsButton>
+        </NuxtLink>
+      </div>
     </div>
     <BlobsFooter />
     <div
