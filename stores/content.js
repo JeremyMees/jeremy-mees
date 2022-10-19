@@ -5,6 +5,7 @@ export const useContentStore = defineStore('content', {
     return {
       title1: 'De ideale boost',
       title2: 'Die jouw bedrijf verdiend',
+      cta: 'Neem contact op',
       description:
         ' Als Creatieve Developer combineer ik strakke designs met goed geschreven code om sterke producten te ontwikkelen. Daardoor kunnen mijn klanten altijd goede resultaten verwachten van een samenwerking met mij.',
       name: 'Jeremy Mees',

@@ -1,5 +1,7 @@
 <template>
-  <button class="button default-cursor">Neem contact op</button>
+  <button class="button default-cursor">
+    <slot />
+  </button>
 </template>
 
 <style scoped>

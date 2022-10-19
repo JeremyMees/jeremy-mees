@@ -9,6 +9,10 @@ module.exports = {
         text: ['Lato', 'sans-serif'],
         'retro-title': ['ChicagoFLF', 'sans-serif'],
         'retro-text': ['FindersKeepers', 'sans-serif'],
+        'blobs-title': ['Playfair Display', 'serif'],
+      },
+      colors: {
+        blobs: '#ED1250',
       },
     },
   },
@@ -16,6 +20,7 @@ module.exports = {
     plugin(({ addVariant }) => {
       addVariant('def', '.theme-default &')
       addVariant('retro', '.theme-retro &')
+      addVariant('blob', '.theme-blobs &')
     }),
   ],
 }

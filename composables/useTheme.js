@@ -1,5 +1,6 @@
-const active = ref('Default')
-const options = ref(['Default', 'Retro'])
+const active = ref('Blobs')
+// const active = ref('Default')
+const options = ref(['Default', 'Retro', 'Blobs'])
 
 export default function useLayout() {
   const setActiveTheme = value => (active.value = value)

@@ -22,7 +22,7 @@ onMounted(() => {
             {{ content.description }}
           </p>
           <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max default-cursor">
-            <DefaultButton />
+            <DefaultButton> {{ content.cta }} </DefaultButton>
           </NuxtLink>
         </div>
         <nuxt-img
@@ -75,7 +75,7 @@ onMounted(() => {
         <p class="title">{{ content.ctaTitle }}</p>
         <p class="body-normal max-w-xl">{{ content.ctaText }}</p>
         <NuxtLink rel="noreferrer noopener" :to="`mailto:${content.email}`" class="max-w-max default-cursor">
-          <DefaultButton />
+          <DefaultButton> {{ content.cta }} </DefaultButton>
         </NuxtLink>
       </div>
     </div>

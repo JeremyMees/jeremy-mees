@@ -7,14 +7,25 @@ useHead({
 
 const theme = useTheme()
 
-onMounted(() => theme.setRandom())
+// onMounted(() => theme.setRandom())
 </script>
 
 <template>
-  <main class="p-4" :class="{ 'theme-default': theme.active.value === 'Default' }">
+  <main
+    :class="{
+      'theme-default p-4': theme.active.value === 'Default',
+      'theme-retro font-retro-text p-4': theme.active.value === 'Retro',
+      'theme-blobs bg-[#0A2463] text-white': theme.active.value === 'Blobs',
+    }"
+  >
+    <div class="blob:block hidden">
+      <div class="blob-one" />
+      <div class="blob-two" />
+      <div class="blob-three" />
+      <div class="blob-four" />
+    </div>
     <div class="max-w-[1800px] mx-auto def:default-cursor">
-      <Default v-if="theme.active.value === 'Default'" class="theme-default" />
-      <Retro v-else-if="theme.active.value === 'Retro'" class="theme-retro font-retro-text" />
+      <component :is="theme.active.value" />
     </div>
   </main>
 </template>
